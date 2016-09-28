@@ -46,7 +46,9 @@
 ```
    到这里就大功告成！！！
    
-**Experimental experience**
+**Experimental experience：**
+
+
    这次实验配置再次用到虚拟机，拥有虚拟机的感觉好棒，不再是单调的win7系统！！！Ubuntu系统其实感觉还不错，就是界面切换和文件查找的时候比较麻烦了一点。。
 
 
