@@ -50,7 +50,9 @@
    $	ant -f runexample.xml -Dnumber=1
 ```
   最后运行第一个例子，截图如下：
+  
   ![](https://github.com/XiaoZeLin/photo/blob/master/%E5%B5%8C%E5%85%A5%E5%BC%8Flab2_3.png)
+  
   
   到这里就大功告成！！！
    
