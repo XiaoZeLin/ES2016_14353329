@@ -30,7 +30,12 @@
    $	sudo make install
    $	pwd
 ```
-   我在运行configure的时候遇到了错误，它提示我c compiler cannot create executables。后来，我上网百度运行命令行：`sudo apt-get install build-essential`就可以了。最重要的是在运行pwd的时候会打开当前文件路径，这需要记下来，因为待会编译dol的时候要用到。
+   
+   我在运行configure的时候遇到了错误，它提示我c compiler cannot create executables。后来，我上网百度运行命令行：`sudo apt-get install build-essential`就可以了。编译configure成功的时候的截图如下：
+   ![](https://github.com/XiaoZeLin/photo/blob/master/%E5%B5%8C%E5%85%A5%E5%BC%8Flab2_1.png)
+   
+   
+   最重要的是在运行pwd的时候会打开当前文件路径，这需要记下来，因为待会编译dol的时候要用到。
    
    最后，按照PPT进行dol的编译：
    ```
