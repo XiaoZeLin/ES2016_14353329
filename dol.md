@@ -24,7 +24,40 @@ i = i*i*i;   //立方
 
 ![example1平方](https://github.com/XiaoZeLin/photo/blob/master/example1.PNG)
 
+###### ECAMPLE2文件分析和修改
+example 2的每个cpp文件和.h文件与eaxmple 1文件的一样，只是.xml文件不一样：example 2的xml文件使用iterator使square.cpp执行了三次，得到i^8(即i的8次方)。这次任务是把square的执行次数改为两次，即要得到i的4次方的结果。原xml文件：
+```
+ <variable value="2" name="N"/>
 
+  <!-- instantiate resources -->
+  <process name="generator">
+    <port type="output" name="10"/>
+    <source type="c" location="generator.c"/>
+  </process>
+
+  <iterator variable="i" range="N">
+    <process name="square">
+      <append function="i"/>
+      <port type="input" name="0"/>
+      <port type="output" name="1"/>
+      <source type="c" location="square.c"/>
+    </process>
+  </iterator>
+
+  <process name="consumer">
+    <port type="input" name="100"/>
+    <source type="c" location="consumer.c"/>
+  </process>
+
+  <iterator variable="i" range="N + 1">
+    <sw_channel type="fifo" size="10" name="C2">
+      <append function="i"/>
+      <port type="input" name="0"/>
+      <port type="output" name="1"/>
+    </sw_channel>
+  </iterator>
+
+```
 
 
 
