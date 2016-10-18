@@ -20,7 +20,7 @@ i = i*i;     //平方
 i = i*i*i;   //立方
 ```
 输出结果：
-@[example1立方](https://github.com/XiaoZeLin/photo/blob/master/example1.PNG)
+![example1平方](https://github.com/XiaoZeLin/photo/blob/master/example1.PNG)
 
 
 
