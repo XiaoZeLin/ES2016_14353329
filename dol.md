@@ -113,9 +113,14 @@ example 2的每个cpp文件和.h文件与eaxmple 1文件的一样，只是.xml�
 ```
  <variable value="" name="N"/>
 ```
+Dot图片：
+
+![dot](https://github.com/XiaoZeLin/Python_Opencv_Computer/blob/master/Dot.PNG)
+
 输出结果：
 
 ![example2](https://github.com/XiaoZeLin/photo/blob/master/eample2.PNG)
+
 
 
 
