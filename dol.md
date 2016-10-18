@@ -27,7 +27,7 @@ i = i*i*i;   //立方
 ###### ECAMPLE2文件分析和修改
 example 2的每个cpp文件和.h文件与eaxmple 1文件的一样，只是.xml文件不一样：example 2的xml文件使用iterator使square.cpp执行了三次，得到i^8(即i的8次方)。这次任务是把square的执行次数改为两次，即要得到i的4次方的结果。原xml文件：
 ```
- <variable value="2" name="N"/>
+ <variable value="3" name="N"/>
 
   <!-- instantiate resources -->
   <process name="generator">
@@ -109,6 +109,13 @@ example 2的每个cpp文件和.h文件与eaxmple 1文件的一样，只是.xml�
 
 </processnetwork>
 ```
+上述代码定义了各种模块连接，一开始是generater与c2相连，然后c2把所有的square连接起来，最后和consumer相连，因为在代码最开始的地方定义了iterator变量N等于3，所以会执行三次square，修改的代码为：
+```
+ <variable value="" name="N"/>
+```
+输出结果：
+
+![example2](https://github.com/XiaoZeLin/photo/blob/master/eample2.PNG)
 
 
 
