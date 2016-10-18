@@ -58,7 +58,57 @@ example 2的每个cpp文件和.h文件与eaxmple 1文件的一样，只是.xml�
   </iterator>
 
 ```
+上面这段代码创建了一个generater、一个consumer、N个square和N+1个channel（名为C2）。以上各模块需要连接的代码如下：
+```
+ <!-- instantiate connection -->
+  <iterator variable="i" range="N">
+    <connection name="to_square">
+      <append function="i"/>
+      <origin name="C2">
+        <append function="i"/>
+        <port name="1"/>
+      </origin>
+      <target name="square">
+        <append function="i"/>
+        <port name="0"/>
+      </target>
+    </connection>
 
+    <connection name="from_square">
+        <append function="i"/>
+        <origin name="square">
+          <append function="i"/>
+          <port name="1"/>
+        </origin>
+        <target name="C2">
+          <append function="i + 1"/>
+          <port name="0"/>
+        </target>
+    </connection>
+  </iterator>
+
+  <connection name="g_">
+    <origin name="generator">
+     <port name="10"/>
+    </origin>
+    <target name="C2"> 
+      <append function="0"/>
+      <port name="0"/>
+    </target>
+  </connection>
+
+  <connection name="_c">
+    <origin name="C2">
+      <append function="N"/>
+      <port name="1"/>
+    </origin>
+    <target name="consumer">
+      <port name="100"/>
+    </target>
+  </connection>
+
+</processnetwork>
+```
 
 
 
