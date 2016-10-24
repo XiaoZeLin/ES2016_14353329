@@ -31,59 +31,33 @@ ROS的安装当然是我们开始动手的第一步了，这里我们使用的�
     ![](http://upload-images.jianshu.io/upload_images/273380-3f5b0289d8e8e560.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 2. 添加软件源到sources.list
-
    ```
-
-sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
-
+   sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
-
 3. 设置密钥
-
-   ```
-
-sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
-
+      ```
+   sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 ```
-
 4. 命令行安装ROS（最好安装桌面完整版desktop-full）
-
-    ```
-
+   ```
   sudo apt-get update
-
   sudo apt-get install ros-jade-desktop-full
-
 ```
 
 5. 初始化rosdep
-
-
-
- ```
-
-sudo rosdep init
-
-rosdep update
-
 ```
-
+   sudo rosdep init
+   rosdep update
+```
 6. 设置环境（添加ROS的环境变量,这样,当你打开你新的shell时,你的bash回话中会自动添加环境变量.）
 
-    ```
-
-echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
-
+ ```
+   echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
    source ~/.bashrc
-
 ```
-
-7. 安装rosinstall（rosinstall命令是一个使用的非常频繁的命令,使用这个命令可以轻松的下载许多ROS软件包。）
-
-   ```
-
-   sudo apt-get install python-rosinstall
-
+6. 安装rosinstall（rosinstall命令是一个使用的非常频繁的命令,使用这个命令可以轻松的下载许多ROS软件包。）
+```
+sudo apt-get install python-rosinstall
 ```
 
 
