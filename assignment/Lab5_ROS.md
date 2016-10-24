@@ -35,13 +35,14 @@ ROS的安装当然是我们开始动手的第一步了，这里我们使用的�
    sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 ```
 3. 设置密钥
+
       ```
    sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net:80 --recv-key 0xB01FA116
 ```
 4. 命令行安装ROS（最好安装桌面完整版desktop-full）
    ```
-  sudo apt-get update
-  sudo apt-get install ros-jade-desktop-full
+   sudo apt-get update
+   sudo apt-get install ros-jade-desktop-full
 ```
 
 5. 初始化rosdep
@@ -55,10 +56,14 @@ ROS的安装当然是我们开始动手的第一步了，这里我们使用的�
    echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
    source ~/.bashrc
 ```
-6. 安装rosinstall（rosinstall命令是一个使用的非常频繁的命令,使用这个命令可以轻松的下载许多ROS软件包。）
+
+
+7. 安装rosinstall（rosinstall命令是一个使用的非常频繁的命令,使用这个命令可以轻松的下载许多ROS软件包。）
 ```
-sudo apt-get install python-rosinstall
+   sudo apt-get install python-rosinstall
 ```
+
+
 
 
 
