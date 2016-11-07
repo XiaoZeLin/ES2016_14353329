@@ -68,7 +68,7 @@ class Deadlock implements Runnable{
 
 实验结果截图如下：
 
-![](http://)
+![](https://cloud.githubusercontent.com/assets/22488425/20049955/6df25c96-a501-11e6-848f-6ca8c448b2cc.jpg)
 
 ##### 死锁四个必要条件
 1. 互斥条件：一个资源每次只能被一个进程使用
